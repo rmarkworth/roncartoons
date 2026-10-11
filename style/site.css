@@ -33,7 +33,7 @@ body{font-synthesis:none;margin:0;background:var(--desk);color:var(--ink);font-f
 header.logo{margin:0}
 .logo a{display:inline-flex;align-items:baseline;color:inherit;text-decoration:none;line-height:1}
 .logo img{height:68px;width:auto;display:block;margin-right:3px}
-.logo b{font-weight:800;font-size:46px;letter-spacing:-.01em}
+.logo b{font-weight:400;font-size:50px;letter-spacing:0}
 .tag{margin:10px 0 0;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
 
 nav.main{margin:24px 0 0}
@@ -85,7 +85,7 @@ address{font-style:normal}
 .foot a{color:var(--link)}
 @media(max-width:620px){
   body{font-size:16.5px}
-  .intro{grid-template-columns:1fr}.logo img{height:52px}.logo b{font-size:34px}
+  .intro{grid-template-columns:1fr}.logo img{height:52px}.logo b{font-size:37px}
   .lead img.side-img{float:none;display:block;margin:0 0 14px;max-width:70%}
   .page{padding-top:18px}
   .sheet{padding-top:36px}
@@ -203,9 +203,9 @@ h2{letter-spacing:-.008em}
 }
 
 /* Eigene Banner (Links-Seite) */
-.banners-own{display:flex;flex-wrap:wrap;gap:18px 22px;align-items:flex-end}
+/*BO*/.banners-own{margin:.8rem 0}.banners-own .brow{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:flex-end;margin:0 0 20px}
 .banners-own figure{margin:0}
-.banners-own img{max-width:100%;height:auto;display:block}
+.banners-own img{width:auto;max-width:100%;height:auto;display:block;box-shadow:0 1px 5px var(--shadow)}
 .banners-own figcaption{font-size:.85rem;opacity:.7;margin-top:4px}
 
 /* breite Absätze unter Galerien */
@@ -222,3 +222,5 @@ main p.wide{max-width:none}
 figure.shot{margin:1.2rem 0;max-width:100%;width:fit-content}
 figure.shot img{display:block;max-width:100%;height:auto;box-shadow:0 2px 8px var(--shadow);background:#fff}
 figure.shot figcaption{font-size:15px;line-height:1.45;color:var(--muted);margin-top:.5rem}
+
+.gallery.left{justify-content:flex-start}
